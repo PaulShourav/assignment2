@@ -184,7 +184,7 @@ nav ul li{
 .sponser-heading{
     text-align: center;
 }
-.sponser-heading p{
+.sponser-heading .sponser-description{
     margin-top: 20px;
     font-size: 14px;
     color: #727272;
