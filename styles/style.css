@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+/* Common Style */
+*{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    margin: 0 240px;
+}
+.btn-primary{
+    font-size: 16px;
+    background-color: #FF900E;
+    color: #FFFF;
+    padding: 14px 18px;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 80px 0;
+}
+/* nav p{
+    font-size:45px;
+    font-weight: 700;
+} */
+nav ul{
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    color: #424242;
+}
+nav ul li{
+    margin-right:30px;
+
+}
+/* banner details */
+.banner-details{
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+.banner-title{
+    font-size: 35px;
+    font-weight: 700;
+}
+.banner-description{
+    color: #727272;
+    font-size: 14px;
+    margin: 20px 0;
+}
+.banner img{
+    width: 100%;
+    margin: 50px 0;
+}
+/* Feature Section */
+.feature-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 73px;
+    margin: 83px 0 125px 0;
+}
+.feature-image-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    
+}
+.feature-image-list img{
+    width: 100%;
+}
+.feature-details{
+   display: flex;
+   align-items: center;
+}
+.feature-title{
+    font-size: 30px;
+    
+}
+.feature-description{
+    font-size: 14px;
+    color: #727272;
+    margin: 20px 0; 
+}
+/* Enjoy */
+.enjoy-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 120px;
+    margin-bottom: 80px;
+}
+
+.enjoy-heading h1{
+  border-left: 3px solid #FF900E;
+  padding-left: 20px;
+}
+.enjoy-heading p{
+    font-size: 14px;
+    color: #727272;
+    margin-top: 20px;
+}
+.enjoy-item{
+   
+    margin-top: 20px;
+    background-color:  #FFFFFF;;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 25px;
+}
+.enjoy-item p{
+    font-size: 12px;
+    color: #727272;
+    padding-top: 8px;
+}
+
+.experience-image{
+   position: relative;
+}
+.experience-image img{
+    width: 100%;
+    height: 95%;
+
+}
+.experience-year{
+    width: 200px;
+    height: 100px;
+    background-color: #FF900E;
+    color: #FFF4E7;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    border-radius: 8px;
+   
+}
+.experience-title{
+    font-size: 30px;
+    font-weight: 700;
+}
+.experience-year{
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+}
+/* Some facts */
+.some-facts-description{
+    color: #727272;
+    margin: 24px 0 70px 0;
+}
+.some-fact-items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 60px;
+    margin: 0 20px ;
+
+}
+.some-fact-item img{
+    width: 40px;
+    height: 40px;
+}
+.some-fact-item{
+    border: 2px solid #FF900E;
+    border-radius: 5px;
+    text-align: center;
+    padding: 25px 15px;
+}
+.some-fact-item p{
+    color: #727272;
+    font-size: 14px;
+}
+.sponsers{
+    margin: 100px 0;
+}
+.sponser-heading{
+    text-align: center;
+}
+.sponser-heading p{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #727272;
+}
+.sponser-image{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.sponser-image img{
+      width: 120px;
+
+}
+/* Footer */
+.footer{
+    text-align: center;
+    background-color: #FFF4E7;
+}
+.footer p{
+    color: #727272;
+    font-size: 14px;
+    padding: 30px 0;
+}
+/* Responsive layout */
+@media screen and (max-width:576px) {
+    .container{
+        margin: 0 10px;
+    }
+    nav, nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        margin-top: 20px;
+    }
+    .feature-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature-image-list{
+        grid-template-columns: repeat(1,1fr);
+
+        
+    }
+    .enjoy-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .experience-year{
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        
+    }
+    .some-fact-items{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sponser-image{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponser-image img{
+        margin: 15px 0;
+    }
+}
