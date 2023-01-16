@@ -169,6 +169,10 @@ nav ul li{
     border-radius: 5px;
     text-align: center;
     padding: 25px 15px;
+    transition: transform .2s; 
+}
+.some-fact-item:hover{
+    transform: scale(1.5);
 }
 .some-fact-item p{
     color: #727272;
